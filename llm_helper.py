@@ -2,7 +2,7 @@
 from llama_cpp import Llama
 
 class LLM:
-    def __init__(self, model_name="model/bart_homer.gguf"):
+    def __init__(self, model_name="models/bart_homer.gguf"):
         """Initialize the LLM with the specified model."""
         self.model_name = model_name
         self.llm = Llama(model_path=self.model_name)
