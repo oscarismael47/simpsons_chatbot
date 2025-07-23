@@ -1,6 +1,8 @@
-# simpsons_chatbot
+# Simpsons Chatbot
 
 This repository contains a Streamlit-based chatbot that uses a fine-tuned Large Language Model (LLM) to respond in the style of Homer Simpson. Users can interact as Bart Simpson or other characters, and the chatbot will reply accordingly.
+
+![Demo](app_recording.gif)
 
 ## Features
 
@@ -21,6 +23,7 @@ The chatbot uses a fine-tuned Llama 3.1 model specifically adapted for Bart and 
 Download the model here:  
 - [Meta-Llama-3.1-8B-q4_k_m-Bart_Simpson_and_Homer_Simpson-GGUF](https://huggingface.co/OscarIsmael47/Meta-Llama-3.1-8B-q4_k_m-Bart_Simpson_and_Homer_Simpson-GGUF)
 
+Place the downloaded `.gguf` file in the `models/` directory (default: `models/bart_homer.gguf`) before running the app.
 
 ## Getting Started
 

@@ -12,7 +12,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 
-st.title("Homer Chatbot")
+st.title("Simpsons Chatbot")
 
 # Inyectar CSS para alinear mensajes y ajustar margen del avatar
 st.markdown(
