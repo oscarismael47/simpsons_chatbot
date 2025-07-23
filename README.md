@@ -59,4 +59,5 @@ Place the downloaded `.gguf` file in the `models/` directory (default: `models/b
 - You can fine-tune your own models using the provided dataset.
 
 
-
+## References
+- [How to Fine-tune LLMs with Unsloth: Complete Guide](https://www.youtube.com/watch?v=Lt7KrFMcCis&t=3841s)
