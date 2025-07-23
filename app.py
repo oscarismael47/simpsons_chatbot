@@ -2,6 +2,16 @@ import uuid
 import streamlit as st
 from llm_helper import LLM
 
+
+# Estado inicial
+if "abot" not in st.session_state:
+    st.session_state.abot = LLM()
+if "chat_id" not in st.session_state:
+    st.session_state.chat_id = str(uuid.uuid4())
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+
 st.title("Homer Chatbot")
 
 # Inyectar CSS para alinear mensajes y ajustar margen del avatar
@@ -27,13 +37,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Estado inicial
-if "abot" not in st.session_state:
-    st.session_state.abot = LLM()
-if "chat_id" not in st.session_state:
-    st.session_state.chat_id = str(uuid.uuid4())
-if "messages" not in st.session_state:
-    st.session_state.messages = []
 
 # Mostrar mensajes previos
 for message in st.session_state.messages:
